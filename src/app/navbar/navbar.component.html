@@ -1,0 +1,56 @@
+  <!-- <mat-toolbar color="primary">
+    <span>w4school</span>
+
+    <span class="example-spacer"></span>
+
+    <div fxShow="true" fxHide.lt-md="true">
+      <a  mat-button routerLink="newexam">أختبار جديد </a>
+      <a  mat-button routerLink="etudiant">الطلاب</a>
+      <a  mat-button routerLink="matiere">المواد </a>
+      <a  mat-button>خروج</a>
+      <a  mat-button>دخول</a>
+      <a  mat-button routerLink="registre">تسجيل</a>
+    </div>
+
+    <div fxShow="true" fxHide.gt-sm="true">
+    <a  (click)="sidenav.toggle()">w4school</a>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav #sidenav fxLayout="column">
+      <div fxLayout="column">
+        <a (click)="sidenav.toggle()" style="color:black ;"  mat-button>Close</a>
+        <a  style="color:black ;" mat-button>أختبار جديد </a>
+        <a  style="color:black ;" mat-button>الطلاب</a>
+        <a  style="color:black ;" mat-button>المواد </a>
+        <a  style="color:black ;" mat-button>خروج</a>
+        <a  style="color:black ;" mat-button>دخول</a>
+        <a  style="color:black ;" mat-button>تسجيل</a>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill><router-outlet></router-outlet></mat-sidenav-content>
+  </mat-sidenav-container> -->
+
+  
+<mat-toolbar color="" class="navbar navbar-default py-2" dir="rtl">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand"  routerLinkActive="active" routerLink="welcome"><span><img src="favicon.ico" alt=""></span> w4school </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="d-flex align-items-center">
+      <ul class="nav navbar-right d-flex align-items-center">
+        <li *ngIf="user?.role == 'doctor'" routerLinkActive="active"><a routerLink="/newexam">أختبار جديد</a></li>
+        <li *ngIf="user?.role == 'doctor'" routerLinkActive="active"><a routerLink="/etudiant">الطلاب</a></li>
+        <li *ngIf="user !== null" routerLinkActive="active"><a routerLink="/matiere">المواد </a></li>
+        <li *ngIf="user !== null" routerLinkActive="active" (click)="logout()"><a routerLink="/login">خروج</a></li>
+        <li *ngIf="user == null" routerLinkActive="active"><a routerLink="/login">دخول</a></li>
+        <li *ngIf="user == null" routerLinkActive="active"><a routerLink="/registre">تسجيل</a></li>
+        <li *ngIf="user !== null" class="username">{{user?.username}}</li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</mat-toolbar>

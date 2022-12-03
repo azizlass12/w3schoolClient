@@ -1,0 +1,455 @@
+{
+  "students": [
+    {
+      "username": "test",
+      "email": "test@test.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "اللغة العربية",
+          "id": "2",
+          "degree": 0
+        },
+        {
+          "name": "Physique",
+          "id": "3",
+          "degree": 0
+        }
+      ],
+      "id": 1
+    },
+    {
+      "username": "Mohamed",
+      "email": "mohamed@gmail.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "الرياضيات",
+          "id": "1",
+          "degree": 1
+        },
+        {
+          "name": "اللغة العربية",
+          "id": "2",
+          "degree": 0
+        }
+      ],
+      "id": 2
+    },
+    {
+      "username": "Ali",
+      "email": "ali@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "username": "Ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "الرياضيات",
+          "id": "1",
+          "degree": 2
+        },
+        {
+          "name": "اللغة العربية",
+          "id": "2",
+          "degree": 1
+        }
+      ],
+      "id": 4
+    },
+    {
+      "username": "aziz",
+      "email": "lassoued@gmail.com",
+      "password": "123456789",
+      "id": 5
+    },
+    {
+      "username": "zied",
+      "email": "zied@gmail.com",
+      "password": "123456789",
+      "subjects": [
+        {
+          "name": "الرياضيات",
+          "id": "1",
+          "degree": 1
+        },
+        {
+          "name": "Programmation",
+          "id": "3",
+          "degree": 0
+        },
+        {
+          "name": "اللغة العربية",
+          "id": "2",
+          "degree": 0
+        }
+      ],
+      "id": 6
+    },
+    {
+      "username": "aziz",
+      "email": "azizlass123@gmail",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "username": "naim",
+      "email": "naim@gmail.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "Phisique",
+          "id": "3",
+          "degree": 0
+        }
+      ],
+      "id": 8
+    },
+    {
+      "username": "lassoued",
+      "email": "azizlass123@gmail",
+      "password": "123",
+      "id": 9
+    },
+    {
+      "username": "mohamed",
+      "email": "ahmed@gmail.com",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "username": "aziz",
+      "email": "naim@gmail.com",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "username": "azi",
+      "email": "naim@gmail.com",
+      "password": "123",
+      "id": 12
+    },
+    {
+      "username": "isla",
+      "email": "azizlass123@gmail",
+      "password": "123",
+      "id": 13
+    },
+    {
+      "username": "aziz",
+      "email": "ahmed@gmail.com",
+      "password": "1234",
+      "id": 14
+    },
+    {
+      "username": "aziz",
+      "email": "azizlass123@gmail",
+      "password": "123",
+      "id": 15
+    },
+    {
+      "username": "ala",
+      "email": "ala@gmail.com",
+      "password": "123",
+      "id": 16
+    },
+    {
+      "username": "ala",
+      "email": "ala@gmail.com",
+      "password": "123",
+      "id": 17
+    },
+    {
+      "username": "ala",
+      "email": "ala@gmail.com",
+      "password": "123",
+      "id": 18
+    },
+    {
+      "username": "kjl",
+      "email": "azizlass1234@gmail",
+      "password": "123",
+      "id": 19
+    },
+    {
+      "username": "uhku",
+      "email": "azizlass1jj23@gmail",
+      "password": "123",
+      "id": 20
+    },
+    {
+      "username": "g,jg",
+      "email": "azizlass1kjhliuhl23@gmail",
+      "password": "123",
+      "id": 21
+    },
+    {
+      "username": "hbjh",
+      "email": "azizlass123x@gmail",
+      "password": "123",
+      "id": 22
+    },
+    {
+      "username": "hk",
+      "email": "aziz@gmail.com",
+      "password": "123",
+      "id": 23
+    },
+    {
+      "username": "kygkyg",
+      "email": "azizlass123@gmail.com",
+      "password": "123",
+      "id": 24
+    },
+    {
+      "username": "aziz",
+      "email": "azizlassoued@gmail.com",
+      "password": "1234",
+      "subjects": [
+        {
+          "name": "الرياضيات",
+          "id": "1",
+          "degree": 0
+        },
+        {
+          "name": "Programmation",
+          "id": "3",
+          "degree": 0
+        },
+        {
+          "name": "اللغة العربية",
+          "id": "2",
+          "degree": 0
+        }
+      ],
+      "id": 25
+    },
+    {
+      "username": "zzzz²",
+      "email": "azozkmok@ijoij.xn--cp-pka",
+      "password": "1",
+      "id": 26
+    },
+    {
+      "username": "hkhkhj",
+      "email": "azizlass12jk3@gmail.com",
+      "password": "123",
+      "id": 27
+    },
+    {
+      "username": "jhgjhjh",
+      "email": "ahmeds@gmail.com",
+      "password": "123",
+      "id": 28
+    },
+    {
+      "username": "sddsdll",
+      "email": "naimsssssssss@gmail.com",
+      "password": "123",
+      "id": 29
+    },
+    {
+      "username": "jlkj",
+      "email": "azizddlass123@gmail",
+      "password": "1",
+      "id": 30
+    },
+    {
+      "username": "jl",
+      "email": "azizlass12k3@gmail",
+      "password": "1",
+      "id": 31
+    },
+    {
+      "username": "lm",
+      "email": "azizlass123j@gmail",
+      "password": "1",
+      "id": 32
+    },
+    {
+      "username": "admin@admin.com",
+      "email": "azizddlass123@zgmail",
+      "password": "k",
+      "id": 33
+    },
+    {
+      "subjects": [
+        {
+          "name": "Phisique",
+          "id": "3",
+          "degree": 0
+        },
+        {
+          "name": "Phisique",
+          "id": "3",
+          "degree": 0
+        },
+        {
+          "name": "Phisique",
+          "id": "3",
+          "degree": 0
+        },
+        {
+          "name": "اللغة العربية",
+          "id": "2",
+          "degree": 1
+        }
+      ],
+      "id": 34
+    },
+    {
+      "username": "saif",
+      "email": "saif@gmail.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "اللغة العربية",
+          "id": "2",
+          "degree": 0
+        },
+        {
+          "name": "Physique",
+          "id": "3",
+          "degree": 1
+        }
+      ],
+      "id": 35
+    },
+    {
+      "username": "azz",
+      "email": "azizlass1@gmail",
+      "password": "123",
+      "id": 36
+    },
+    {
+      "username": "azz",
+      "email": "azizlass1@gmail",
+      "password": "123",
+      "id": 37
+    },
+    {
+      "username": "khlifa@khlifa.com",
+      "email": "khlifa@khlifa.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "الرياضيات",
+          "id": "4",
+          "degree": 0
+        }
+      ],
+      "id": 38
+    },
+    {
+      "username": "khlifa",
+      "email": "khlifa1@khlifa.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "Phisique",
+          "id": "3",
+          "degree": 2
+        }
+      ],
+      "id": 39
+    },
+    {
+      "username": "wiem",
+      "email": "wiem@gmail.com",
+      "password": "123",
+      "subjects": [
+        {
+          "name": "math",
+          "id": "5",
+          "degree": 1
+        }
+      ],
+      "id": 40
+    }
+  ],
+  "doctor": [
+    {
+      "username": "admin",
+      "email": "admin@admin.com",
+      "password": "123",
+      "id": 1
+    }
+  ],
+  "subjects": [
+    {
+      "name": "Phisique",
+      "questions": [
+        {
+          "question": "puissance ?",
+          "answer1": "W = A x V",
+          "answer2": "W = A / V",
+          "answer3": "W = A x V * 2",
+          "answer4": "W = V /A",
+          "correctAnswer": "W = A x V"
+        },
+        {
+          "question": "Poids ?",
+          "answer1": "P = g / m ",
+          "answer2": "P = m / g",
+          "answer3": "P = m * g *2",
+          "answer4": "P = g *m",
+          "correctAnswer": "P = g *m"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "الرياضيات",
+      "questions": [
+        {
+          "question": "5*3  ?",
+          "answer1": "12",
+          "answer2": "13",
+          "answer3": "14",
+          "answer4": "15",
+          "correctAnswer": "15"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "math",
+      "questions": [
+        {
+          "question": "1+1 ?",
+          "answer1": "5",
+          "answer2": "6",
+          "answer3": "4",
+          "answer4": "2",
+          "correctAnswer": "2"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "math",
+      "questions": [
+        {
+          "question": "1+1 ?",
+          "answer1": "6 ",
+          "answer2": "9",
+          "answer3": "8",
+          "answer4": "2",
+          "correctAnswer": "2"
+        }
+      ],
+      "id": 6
+    }
+  ],
+  "login": [
+    {
+      "username": "admin",
+      "role": "doctor",
+      "userId": 1,
+      "id": 1
+    }
+  ]
+}

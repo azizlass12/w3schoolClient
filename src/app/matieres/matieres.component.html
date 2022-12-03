@@ -1,0 +1,15 @@
+
+            <div class="subjectBox">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 " *ngFor="let item of dataArray;index as i "  >
+                        <div class="namesubject">
+                            <div>{{item.name}}</div>
+                        </div>
+                        <div class="subBtn">
+                         <button *ngIf="user?.role == 'doctor'" mat-raised-button color="warn" (click)="delete(item.id,i)"  class="mx-1">حذف</button>
+                         <button *ngIf="user?.role == 'doctor'" mat-raised-button color="primary" style="    background-color: #20e715;"  class="mx-1" (click)="affiche(item.id,i)">عرض</button>
+                         <button *ngIf="user?.role == 'students'" mat-raised-button class="mx-1 btn btn-success" (click)="affiche(item.id,i)">ابدأ الاختبار</button>
+                        </div>
+                    </div>
+                </div>
+            </div>

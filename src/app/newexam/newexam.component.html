@@ -1,0 +1,269 @@
+<div class="new-exam">
+  <mat-horizontal-stepper linear>
+    <mat-step label="اسم المادة"  [completed]="startAdd" >
+      <div class="AddSubject">
+        <div>اسم المادة :</div>
+        
+          <mat-form-field appearance="fill" color="warn">
+            <mat-label>اسم المادة</mat-label>
+            <input
+            
+              matInput   
+              type="text" 
+              [formControl]="name"
+            />
+            
+
+            <button color="warn"  mat-raised-button matStepperNext  (click)="start()">ابدأ</button>
+            <p></p>
+          </mat-form-field>
+    
+      </div>            
+
+    </mat-step>
+    <mat-step label="اسئلة " [completed]="preview">
+      <div class="question">
+        <!--  > -->
+
+        <form>
+          <mat-form-field appearance="outline" color="warn" class="queiz">
+            <mat-label>السؤال  </mat-label>
+            <input matInput type="text"   [formControl]="Questions" />
+          </mat-form-field>
+         
+          <div class="questBtn">
+            <div>
+              <!-- <button
+                mat-raised-button
+                class="btn btn-success"
+                matStepperNext
+                (click)="submit()"
+                disabled="{{answerQuestion ? false : true }}"
+              >
+                {{ preview ? "عرض" : "انتهاء" }}
+              </button> -->
+              <button
+                mat-raised-button
+                color="warn"
+                matStepperPrevious
+                (click)="previews()"
+              >
+                الغاء
+              </button>
+            </div>
+            <div >
+              <button  mat-raised-button color="accent" (click)="clearForm()">
+                حذف
+              </button>
+              <button
+                mat-raised-button
+                color="primary"
+                type="submit" 
+                matStepperNext
+(click)="createQuestion()"
+              >
+              {{ preview ? "عرض" : "انتهاء" }}              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </mat-step>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<mat-step [completed]="preview2">
+  <div class="question">
+    <form class="row"   #f2="ngForm" (ngSubmit)="createAnswer(f2)" >
+
+      <div class="col-md-6 col-sm-12">
+        <input 
+                        style="margin: 11px 16px;"
+    
+        type="radio"
+          value="A" 
+          name="Answercorrect"
+          #Answercorrect="ngModel"
+          ngModel                color="warn"
+        >
+        <mat-form-field color="warn">
+          <mat-label>أجابة A</mat-label>
+          <input matInput type="text"   name="A"
+          #A="ngModel"
+          ngModel />
+        </mat-form-field>
+      </div>
+    
+      <div class="col-md-6 col-sm-12">
+        <input
+        type="radio"
+        style="margin: 11px 16px;"
+    
+        value="B"
+          name="Answercorrect"
+          #Answercorrect="ngModel"
+          ngModel 
+                          color="warn"
+        >
+        <mat-form-field color="warn">
+          <mat-label>أجابة B</mat-label>
+          <input matInput type="text"
+            
+          name="B"
+          #B="ngModel"
+          ngModel />
+        </mat-form-field>
+      </div>
+    
+      <div class="col-md-6 col-sm-12">
+        <input 
+        type="radio"
+        style="margin: 11px 16px;"
+    
+          value="C"
+          name="Answercorrect"
+          #Answercorrect="ngModel"
+          ngModel 
+                          color="warn"
+        >
+        <mat-form-field color="warn">
+          <mat-label>أجابة C</mat-label>
+          <input matInput type="text" 
+          name="C"
+          #C="ngModel"
+          ngModel  />
+        </mat-form-field>
+      </div>
+    
+      <div class="col-md-6 col-sm-12">
+        <input
+        value="D"
+        type="radio"
+          style="margin: 11px 16px;"
+        name="Answercorrect"
+        #Answercorrect="ngModel"
+        ngModel 
+                        color="warn"
+        >
+        <mat-form-field color="warn">
+          <mat-label>أجابة D</mat-label>
+          <input matInput type="text" 
+          name="D"
+          #D="ngModel"
+          ngModel  />
+        </mat-form-field>
+      </div>
+      <!-- <button type="submit" mat-raised-button color="accent"  > submit answer </button> -->
+      <div class="questBtn">
+        <div>
+          <!-- <button
+            mat-raised-button
+            class="btn btn-success"
+            matStepperNext
+            (click)="submit()"
+            disabled="{{answerQuestion ? false : true }}"
+          >
+            {{ preview ? "عرض" : "انتهاء" }}
+          </button> -->
+          <button
+            mat-raised-button
+            color="warn"
+            matStepperPrevious
+            (click)="cancel()"
+          >
+            الغاء
+          </button>
+        </div>
+        <div>
+          <button mat-raised-button color="accent" matStepperPrevious (click)="clearForm()" >
+             add other question ?
+          </button>
+          <button
+            mat-raised-button
+            color="primary"
+            type="submit" 
+            matStepperNext
+(click)="getAll()"
+          >
+          {{ preview ? "عرض" : "انتهاء" }}              </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</mat-step>
+
+
+
+
+
+
+
+
+    
+    <mat-step label="عرض الاختبار" completed="false">
+      <div class="examBox">
+        <div class="examhead text-center">
+          <h2>اختبار  {{subject}}</h2>
+        </div>
+        <div class="quizBox">
+          <strong
+            ><span class="text-danger">سؤال 1</span> .
+           </strong
+          >
+          <div class="row" dir="rtl">
+            <div class="col-sm-12"></div>
+            <div class="col-sm-12"></div>
+            <div class="col-sm-12"></div>
+            <div class="col-sm-12"></div>
+            <div class="col-sm-12">
+              <span class="text-success"
+                >الاجابة الصحيحة. </span
+              >
+            </div>
+          </div>
+          <div class="text-start">
+            <button
+              mat-raised-button
+              class="btn btn-danger"
+         
+            >
+              حذف
+            </button>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

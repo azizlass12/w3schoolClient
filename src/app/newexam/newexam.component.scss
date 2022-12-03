@@ -1,0 +1,92 @@
+
+.new-exam {
+    
+    min-height: 100%;
+       
+    /* Code above makes sure our page actually covers the entire viewport. */
+    
+     background-image: url(https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80);
+     background-size: cover;
+    
+    /* "cover" tells the browser to make sure the image always covers the entire container, in this case html. The browser will cover the container even if it has to stretch the image or cut a little bit off the edges. */
+    
+     background-repeat: no-repeat;
+    
+    /* The browser add can also choose to display your background image as tiles depending on its size. To prevent this from happening, use no-repeat: */
+    
+     background-position: center;
+    padding: 50px 0;
+    button {
+        margin-right: 15px;
+    }
+    
+    .question {
+        width: 70%;
+        margin: 50px auto;
+        form {
+            mat-form-field {
+                width: 88%;
+                margin-top: 30px;
+                &.queiz {
+                    width: 100%;
+                }
+            }
+            .questBtn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+    
+    .examBox {
+        width: 90%;
+        margin: 50px auto;
+        border: 1px solid #DDD;
+        border-radius: 10px;
+        padding: 20px;
+        
+        .examhead {
+            margin-top: -40px;
+
+            margin-bottom: 20px;
+            h2 {
+                font-family: 'Almarai', sans-serif;
+                display: inline-block;
+                padding: 5px 88px;
+                background-color: #f44336;
+                border-radius: 30px;
+                font-size: 28px;
+                color: #FFf;
+
+            }
+            
+        }
+    
+        .quizBox {
+           .row {
+               padding-right: 30px;
+               .col-sm-12 {
+                margin: 7px 0px;
+                font-size: 20px;
+             }
+           }
+            strong {
+                font-size: 22px;
+            }
+        }
+    }
+    
+    
+    
+    .alert-danger {
+        background-color: #f44336c4;
+        color:#FFF;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    
+    .text-success {
+        color: #0ec311;
+    }
+}

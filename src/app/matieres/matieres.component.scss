@@ -1,0 +1,68 @@
+
+.subjectBox {
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+    // background-image: url("assets\images.png");
+    background-image: url(https://imgur.com/FBejUjS.jpg);
+   background-size: cover;
+  
+  /* "cover" tells the browser to make sure the image always covers the entire container, in this case html. The browser will cover the container even if it has to stretch the image or cut a little bit off the edges. */
+  
+   
+  /* The browser can also choose to display your background image as tiles depending on its size. To prevent this from happening, use no-repeat: */
+  background-repeat: no-repeat;
+   background-position: center; 
+   
+     
+    .namesubject {
+        position: relative;
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
+        margin-bottom: 10px ;
+        border-radius: 10px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        margin-top: 20px;
+        &:hover {
+            transform: translateY(-15px);
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.6);
+
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        div {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            /* margin: auto; */
+            line-height:3;
+            font-size: 35px;
+            font-weight: 600;
+            color: #FFF;
+            background-color: #368ff4;
+            border-radius: 10px;
+        }
+    }
+    .subBtn {
+        text-align: center;
+    }
+  
+}
+
+ 
+ /* To keep things pretty, we will keep our image always centered, this will center the image both horizontally and vertically at all times.*/
+ 
+
+ 
+ 
+ 
+ 
+ 
+ /* Optional: How to Add a Media Query for Mobile
+ To add some icing on the cake, you may wish to add a media query for smaller screens: */
+ 
